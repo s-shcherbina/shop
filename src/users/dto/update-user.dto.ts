@@ -1,6 +1,6 @@
 import { IsEmail, IsMobilePhone, IsNotEmpty, IsString } from 'class-validator';
 
-export class CreateUserDTO {
+export class UpdateUserDTO {
   @IsString()
   @IsNotEmpty()
   name: string;
@@ -10,10 +10,5 @@ export class CreateUserDTO {
   @IsMobilePhone()
   phone: string;
 
-  // @IsString()
-  // @IsEmail()
   email: string;
-
-  // @IsString()
-  password: string;
 }
