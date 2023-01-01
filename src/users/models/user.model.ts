@@ -8,6 +8,9 @@ export class User extends Model {
   @Column
   phone: string;
 
+  // @Column
+  // local: string;
+
   @Column({ defaultValue: '' })
   email: string;
 
